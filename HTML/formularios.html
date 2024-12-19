@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="h"  style="color: aqua; background-color: blueviolet; text-align: center;"><u>ESTO SERVIRÁ PARA PRACTICAR DE CARA AL EXAMEN</u></h1>
+    </header>
+    <main>
+        <h1>ÍNDICE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="textstyle.html">Formato del texto</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="tablasmultimedia.html">Tablas y multimedia</a></li>
+                <li>Formularios</li>
+            </ul>
+        </nav>
+        <br/>
+        <section>
+            <article>
+                <h2>Rellena tu CV</h2>
+                <form action="" method="post">
+                    <div>
+                        <label for="nombre">Nombre</label><br/>
+                        <input id="nombre" name="nombre" type="text" maxlength="30">
+                    </div>
+                    <div>
+                        <label for="apellidos">Apellidos</label><br/>
+                        <input id="apellidos" name="apellidos" type="text" size="50px" maxlength="80">
+                    </div>
+                    <div>
+                        <label for="password">Contraseña</label><br/>
+                        <input id="password" name="password" type="password" maxlength="10">
+                    </div>
+                    <div>
+                        <label for="dni">DNI</label><br/>
+                        <input id="dni" name="dni" size="10px" maxlength="9">
+                    </div>
+                    <div>
+                        <label for="sexo">Sexo</label><br/>
+                        <input id="sexo" name="sexo" type="radio" value="hombre" checked="checked">Hombre<br/>
+                        <input id="sexo" name="sexo" type="radio" value="mujer">Mujer<br/><br/>
+                    </div>
+                    <div>
+                        <label for="foto">Inlcuir mi foto</label>
+                        <input id="foto" name="foto" type="file"><br/><br/>
+                    </div>
+                    <div>
+                        <input id="sub" name="sub" type="checkbox" checked="checked">Suscribirme al boletín de novedades<br/><br/>
+                    </div>
+                    <div>
+                        <input name="guardar" type="submit" value="Guardar cambios">
+                        <input name="reset" type="reset" value="Borrar los datos introducidos">
+                    </div>
+                </form>
+            </article>
+            <br/><br/><br/>
+            <article>
+                <h2>:: Formulari de registre al Portal ::</h2>
+                <form action="" method="post">
+                    <fieldset>
+                        <legend>Dades personals</legend>
+                        <label for="nom">Nom:</label>
+                        <input id="nom" name="nom" type="text" placeholder="Nom">
+                        <label for="cognom">Cognoms:</label>
+                        <input id="cognom" name="cognom" type="text" placeholder="Cogoms"><br/>
+                        <label for="document">DNI:</label>
+                        <input id="document" name="document" type="text" placeholder="P.ex: 45987989X">
+                        <label for="data">Data de naiximent:</label>
+                        <input id="data" name="data" type="date">
+                        <label for="provincia">Provincia:</label>
+                        <select id="provincia" name="provincia">
+                            <option value="" selected="selected"><- selecciona -</option>
+                            <option value="valencia">Valencia</option>
+                            <option value="alicante">Alicante</option>
+                            <option value="castellon">Castellón</option>
+                        </select><br/>
+                        <label for="username">Username:</label>
+                        <input id="username" name="username" type="text">
+                        <label for="pass">Clau:</label>
+                        <input id="pass" name="pass" type="password">
+                        <label for="pass2">Repetir Clau:</label>
+                        <input id="pass2" name="pass2" type="password"><br/>
+                        <label for="mail">E-Correu:</label>
+                        <input id="mail" name="mail" type="email" placeholder="usuari@domini.org">
+                        <label for="edat">Franja d'edat:</label>
+                        <input list="edat">
+                        <datalist id="edat">
+                            <option value="menor" label="Menor de 16 anys."></option>
+                            <option value="mayor" label="Mayor de 16 anys."></option>
+                        </datalist><br/>
+                        <label for="sexe">Sexe:</label>
+                        <input id="sexe" name="sexe" type="radio">Home
+                        <input id="sexe" name="sexe" type="radio">Dona<br/>
+                        <label for="codi">Codi País:</label>
+                        <input id="codi" name="codi" type="number" maxlength="2" placeholder="Codi del país dos caracteres">
+                        <label for="zip">Codi ZIP:</label>
+                        <input id="zip" name="zip" type="number" placeholder="El codi postal"><br/>
+                        <label for="img">Imatge Personal:</label>
+                        <input id="img" name="img" type="file">
+                        <label for="interes">Temas d'interés:</label><br/>
+                        <select id="interes" name="interes" size="3" multiple="multiple">
+                            <option value="admin" selected="selected">Administració de base de dades</option>
+                            <option value="analisis">Análisis i programació</option>
+                            <option value="arquitectura">Arquitectura</option>
+                            <option value="calitat">Calitat</option>
+                            <option value="inteligencia">ERP, CRM, Business Intelligence</option>
+                        </select><br/>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Altres dades dínterès</legend>
+                        <label for="interessos">Interessos:</label><br/>
+                        <input id="interessos" name="interessos" type="checkbox" value="css">CSS
+                        <input id="interessos" name="interessos" type="checkbox" value="html5">HTML5
+                        <input id="interessos" name="interessos" type="checkbox" value="javascript">Javascript<br/>
+                        <label for="coneiximnents">Coneiximnents:</label><br/>
+                        <input id="coneiximnents" name="coneiximnents" type="checkbox" value="xarxes">Xarxes Socials
+                        <input id="coneiximnents" name="coneiximnents" type="checkbox" value="programahtml">Programació HTML
+                        <input id="coneiximnents" name="coneiximnents" type="checkbox" value="programacss">Programació CSS
+                        <input id="coneiximnents" name="coneiximnents" type="checkbox" value="disseny">Disseny
+                        <label for="comentaris">Comentaris:</label><br/>
+                        <textarea id="comentaris" name="comentaris" cols="40" rows="5" placeholder="Açí disposeu d'espai per escriure"></textarea><br/>
+                    </fieldset>
+                    <input id="envia" name="envia" type="submit" value="Enviar">
+                    <input id="borra" name="borraa" type="reset" value="Borrar">
+                </form>
+            </article>
+        </section>
+    </main>
+    <br/><br/>
+    <footer>
+        <address>
+            &#169;​ Eduardo Heredia Escrich<br/><br/>
+            <strong>Contacto: </strong><em>&emsp;667320910 &emsp; eduardoherediaescrich@drfaustibarbera.com</em>
+        </address>
+    </footer>
+</body>
+</html>
